@@ -7,6 +7,14 @@ from sklearn.decomposition import PCA
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+def getLabels(dataSet, centroids):
+
+
+def shouldStop(oldCentroids, centroids, iterations, max_iterations):
+    if iterations > max_iterations:
+        return True
+    else:
+        return oldCentroids == centroids
 
 def getRandomCentroids(numFeatures, k):
     centroidList = []
@@ -35,3 +43,8 @@ centroids = getRandomCentroids(numFeatures, k)
 
 iterations = 0
 oldCentroids = None
+
+while not shouldStop(oldCentroids, centroids, iterations, 100):
+    oldCentroids = centroids
+    iterations += 1
+
