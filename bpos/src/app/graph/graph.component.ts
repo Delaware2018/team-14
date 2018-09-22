@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { single, multi } from './data';
+import { GraphService } from './graph.service';
 
 @Component({
   selector: 'app-graph',
@@ -30,7 +31,10 @@ export class GraphComponent implements OnInit {
 
   // line, area
   autoScale = true;
+
+  constructor(private graphService: GraphService) { }
   ngOnInit() {
+    this.graphService.getDonorByState();
     Object.assign(this, {single, multi});
   }
   onSelect(event) {

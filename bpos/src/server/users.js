@@ -1,3 +1,5 @@
+include
+
 router.get('/', function(req, res, next) {
 	res.locals.connection.query('SELECT * from users', function (error, results, fields) {
 	  	if(error){
