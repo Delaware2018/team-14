@@ -9,7 +9,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-
 #builds a hash of the states to their average data
 loc = ('Public Data.xlsx')
 wb = xlrd.open_workbook(loc)
@@ -97,4 +96,3 @@ oldCentroids = None
 while not shouldStop(oldCentroids, centroids, iterations, 100):
     oldCentroids = centroids
     iterations += 1
-
