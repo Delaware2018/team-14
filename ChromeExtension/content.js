@@ -96,10 +96,15 @@ getAge = function() {
 
 getSchool = function() {
     return document.getElementById("school").value;
-}
+};
+
+getBusinessDesc = function () {
+    return document.getElementById("business_descr").value;
+};
 
 let businessoOptions;
 let studentStatusText;
+let businessStatusText;
 const studentOption = document.getElementById("student");
 studentOption.onchange = function() {
     studentStatusText = studentOption.options[studentOption.selectedIndex].textContent;
@@ -119,6 +124,7 @@ studentOption.onchange = function() {
     businessOptions = document.getElementById("business");
     // Check if donator is a business owner
     businessOptions.onchange = function () {
+        businessStatusText = businessOptions.options[businessOptions.selectedIndex].textContent;
         const businessStatus = businessOptions.options[businessOptions.selectedIndex].value;
         const isBusinessOwner = businessStatus === '1';
         if (isBusinessOwner) {
@@ -138,6 +144,8 @@ donateBtn.onclick = function() {
        lname: fullname.lname,
         student_status: studentStatusText,
         school: getSchool(),
+        has_business: businessStatusText,
+        business_descr: getBusinessDesc(),
     };
 };
 
