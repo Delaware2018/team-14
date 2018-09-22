@@ -34,7 +34,8 @@ export class GraphComponent implements OnInit {
 
   constructor(private graphService: GraphService) { }
   ngOnInit() {
-    this.graphService.getDonorByState();
+    /*var obj = this.graphService.getDonorByState();
+    console.log(obj);*/
     Object.assign(this, {single, multi});
   }
   onSelect(event) {

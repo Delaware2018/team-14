@@ -12,10 +12,10 @@ const httpOptions = {
 })
 export class GraphService {
      constructor(private http: HttpClient) {}
-
     // Uses http.get() to load data from a single API endpoint
     getDonorByState() {
-        return this.http.get('http://localhost:3000/api/users&state/').pipe(map(res => console.log(res)));
+        return this.http.get('http://localhost:3000/api/users&state/').subscribe(data => {console.log('we got', data)
+        });
     }
 
 }
