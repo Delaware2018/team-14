@@ -37,18 +37,13 @@ for key, value in table_hash.items():
     charity_rate.append(value[2])
     charity_amount.append(value[3])
 
-print(places)
-print(salaries)
-print(charity_rate)
-print(charity_amount)
+X = np.array([places, salaries, charity_rate, charity_amount]).T
 
-df = pd.DataFrame({
-    "location": places,
-    "salary": salaries,
-    "charity_rate": charity_rate,
-    "charity_amount": charity_amount
-})
+kmeans = KMeans(n_clusters=9, random_state=0).fit(X)
 
+
+print(kmeans.predict([[1,100000,40,2000], [2,90000,20,1800]]))
+print(kmeans.cluster_centers_)
 
 
 def getLabels(dataSet, centroids):
@@ -73,7 +68,7 @@ def getRandomCentroids(numFeatures, k):
 
 k = 6
 
-numFeatures = len(df)
+numFeatures = len(X)
 centroids = getRandomCentroids(numFeatures, k)
 
 iterations = 0
