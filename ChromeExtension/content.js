@@ -64,6 +64,18 @@ getDonationAmount = function () {
     return amount;
 };
 
+getDonationFreq = function() {
+    const freqRadio = document.getElementsByClassName("radio-btn")[0];
+    const freqLabels = freqRadio.getElementsByTagName("label");
+    if (freqLabels[0].children[0].checked) {
+        return "one_time";
+    } else if (freqLabels[1].children[0].checked) {
+        return "monthly"
+    } else {
+        return "annually"
+    }
+};
+
 let businessoOptions;
 const studentOption = document.getElementById("student");
 studentOption.onchange = function() {
@@ -90,14 +102,13 @@ studentOption.onchange = function() {
             inputContainer.appendChild(htmlToElement('<br>'));
         }
     };
-
-    getDonationAmount();
 };
 
 const donateBtn = document.getElementById("submit");
 donateBtn.onclick = function() {
     const donateJson = {
        donation_amount: getDonationAmount(),
+       donation_freq: getDonationFreq(),
     };
 };
 
