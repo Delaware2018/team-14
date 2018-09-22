@@ -1,15 +1,15 @@
 // data for graphing
 export let single = [
     {
-      'name': 'Germany',
+      'name': 'North',
       'value': 8940000
     },
     {
-      'name': 'USA',
+      'name': 'West',
       'value': 5000000
     },
     {
-      'name': 'France',
+      'name': 'South',
       'value': 7200000
     }
   ];
