@@ -7,7 +7,7 @@ function htmlToElement(html) {
 
 const inputContainer = document.getElementById("howheard-block");
 const additionalInformation = htmlToElement('<div class="form-set cf how">' +
-    '    <h2>Additional Information</h2>' +
+    '    <br><h2>Additional Information</h2>' +
     '    <label>Student Status</label>' + 
     '    <div class="form-item cf select-field odd">' +
     '        <select id="student" name="student" onclick="setHowHeard();">' +
@@ -56,6 +56,14 @@ const schoolInput = htmlToElement('<div class="form-item cf text-field odd" >' +
     '					</div>'
 );
 
+getDonationAmount = function () {
+    const listElem = document.getElementsByClassName("active")[0];
+    const spanElem = listElem.children[0];
+    const textContent = spanElem.textContent;
+    const amount = Number(textContent);
+    return amount;
+};
+
 let businessoOptions;
 const studentOption = document.getElementById("student");
 studentOption.onchange = function() {
@@ -77,12 +85,19 @@ studentOption.onchange = function() {
     businessOptions.onchange = function () {
         const businessStatus = businessOptions.options[businessOptions.selectedIndex].value;
         const isBusinessOwner = businessStatus === '1';
-        console.log(businessStatus, isBusinessOwner);
         if (isBusinessOwner) {
             inputContainer.appendChild(businessDescriptionInput);
             inputContainer.appendChild(htmlToElement('<br>'));
         }
     };
+
+    getDonationAmount();
 };
 
+const donateBtn = document.getElementById("submit");
+donateBtn.onclick = function() {
+    const donateJson = {
+       donation_amount: getDonationAmount(),
+    };
+};
 
