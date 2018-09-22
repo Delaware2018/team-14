@@ -65,13 +65,28 @@ while counter < len(kMeansModel):
 for line in kMeansModel:
     print(line)
 
+def kmeans(dataSet, k):
+    numFeatures = dataSet
+    centroids = getRandomCentroids(len(dataSet), k)
+    iterations = 0
+    oldCentroids = None
 
+    while not shouldStop(oldCentroids, centroids, iterations):
+        oldCentroids = centroids
+        iterations += 1
+
+        labels = getLabels(dataSet, centroids)
+
+    return centroids
 
 def shouldStop(oldCentroids, centroids, iterations, max_iterations):
     if iterations > max_iterations:
         return True
     else:
         return oldCentroids == centroids
+
+def getLabels(dataSet, centroids):
+
 
 def getRandomCentroids(numFeatures, k):
     centroidList = []
