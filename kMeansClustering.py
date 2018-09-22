@@ -65,8 +65,7 @@ while counter < len(kMeansModel):
 for line in kMeansModel:
     print(line)
 
-print(location_sum)
-print(salary_sum)
+
 
 def shouldStop(oldCentroids, centroids, iterations, max_iterations):
     if iterations > max_iterations:
