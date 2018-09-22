@@ -89,6 +89,11 @@ getName = function() {
     }
 };
 
+getAge = function() {
+    const ageLabel = document.getElementById("age");
+    return ageLabel.value;
+};
+
 let businessoOptions;
 const studentOption = document.getElementById("student");
 studentOption.onchange = function() {
