@@ -7,8 +7,11 @@ function htmlToElement(html) {
 
 const inputContainer = document.getElementById("howheard-block");
 const additionalInformation = htmlToElement('<div class="form-set cf how">' +
-    '    <br><h2>Additional Information</h2>' +
-    '    <label>Student Status</label>' + 
+    '<br><h2>Additional Information</h2>' +
+    '   <br><label for="age">Age:</label>' +
+    '    <input type="number" id="age" name="age"' +
+    '            step="1" /><br>' +
+    '    <br><label>Student Status:</label>' + 
     '    <div class="form-item cf select-field odd">' +
     '        <select id="student" name="student" onclick="setHowHeard();">' +
     '            <option value="-1" selected="selected">Select one </option>' +
