@@ -18,5 +18,25 @@ except mysql.connector.Error as err:
 else:
   print('connected')
   cursor =  db.cursor()
+  
+  cursor.execute("CREATE TABLE users (" 
+  + "firstname varchar(255),"
+  + "lastname varchar(255),"
+  + "email varchar(255),"    
+  + "city varchar(255),"
+  + "state varchar(255),"
+  + "zipcode int,"
+  + "school varchar(255),"
+  + "year int," 
+  + "phone varchar(255),"
+  + "organization varchar(255),"
+  + "gender varchar(255),"
+  + "streetnum varchar(255),"
+  + "streetname varchar(255),"
+  + "amount int,"
+  + "recurring varchar(255),"
+  + "businessOrNot varchar(255),"
+  + "businessdescription varchar(255)"
+  + ");")
 
 db.close()
