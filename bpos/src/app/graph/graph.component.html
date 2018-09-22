@@ -1,0 +1,16 @@
+<ngx-charts-pie-grid
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="single"
+      (select)="onSelect($event)">
+</ngx-charts-pie-grid>
+
+
+<ngx-charts-pie-chart
+    [view]="view"
+    [results]= "single"
+    [scheme] = "colorScheme"
+    [labels] = "true"
+    [legend] = "true"
+    >
+</ngx-charts-pie-chart>
