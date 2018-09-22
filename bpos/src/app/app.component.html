@@ -8,25 +8,20 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-grid-list cols="2" rowHeight="2:1">
+<mat-grid-list cols="1">
   <mat-grid-tile>
-    <mat-card>1</mat-card>
+    <mat-card>
+      <!--mat card header does NOT work-->
+      <mat-card-header><mat-card-title>Donors by State</mat-card-title></mat-card-header>
+      <app-graph></app-graph>
+    </mat-card>
   </mat-grid-tile>
-  <mat-grid-tile>
-      <mat-card>2</mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-      <mat-card>3</mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-      <mat-card>4</mat-card>
-  </mat-grid-tile>
+
 </mat-grid-list>
 
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<!--future functionality: have this drive dynamic content-->
+<!--button mat-button [matMenuTriggerFor]="menu">Menu</button>
 <mat-menu #menu="matMenu">
   <button mat-menu-item>Item 1</button>
   <button mat-menu-item>Item 2</button>
-</mat-menu>
-
-<app-graph></app-graph>
+</mat-menu-->
