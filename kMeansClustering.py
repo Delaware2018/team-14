@@ -42,12 +42,32 @@ X = np.array([places, salaries, charity_rate, charity_amount]).T
 kmeans = KMeans(n_clusters=9, random_state=0).fit(X)
 
 
-print(kmeans.predict([[1,100000,40,2000], [2,90000,20,1800]]))
-print(kmeans.cluster_centers_)
+kMeansModel = []
+for x in kmeans.cluster_centers_:
+    vector = []
+    for num in x:
+        vector.append(repr(num))
+    kMeansModel.append((vector))
 
 
-def getLabels(dataSet, centroids):
-    print("hello world")
+location_sum = 0
+salary_sum = 0
+for line in kMeansModel:
+    location_sum += float(line[0])
+    salary_sum += float(line[1])
+
+counter = 0
+while counter < len(kMeansModel):
+    kMeansModel[counter][0] = str(float(kMeansModel[counter][0]) / location_sum)
+    kMeansModel[counter][1] = str(float(kMeansModel[counter][1]) / salary_sum)
+    counter += 1
+
+
+for line in kMeansModel:
+    print(line)
+
+print(location_sum)
+print(salary_sum)
 
 def shouldStop(oldCentroids, centroids, iterations, max_iterations):
     if iterations > max_iterations:
