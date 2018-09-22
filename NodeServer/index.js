@@ -12,7 +12,8 @@ console.log(cred);
 var con = mysql.createConnection({
     host: cred.host,
     user: cred.user,
-    password: cred.password
+    password: cred.password,
+    database: cred.database
 });
 
 con.connect(function (err) {
@@ -37,6 +38,11 @@ app.listen(app.get('port'), function () {
 });
 
 app.post('/api/add_donor', function(req, res) {
-    // TODO(anesu): Add logic
+    const data = req.body;
+    con.query(`INSERT INTO users (firstname, school, amount, recurring, businessOrNot, businessdescription) VALUES (${data.fname}, ${data.school}, ${data.amount}, ${data.donation_freq}. ${data.has_business}, ${data.business_descr}`, function(err, result){
+        if (err) {
+            console.log(err);
+        }
+    });
     res.status(200).send();
 });
