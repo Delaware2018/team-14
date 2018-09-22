@@ -4,7 +4,7 @@ from mysql.connector import errorcode
 try:
   # attempt to connect to database
   # enter credentials  
-  db = mysql.connector.connect(user='team14', password='',
+  db = mysql.connector.connect(user='team14', password='goTeam14',
   host='35.173.239.182',
   database='bpos')
 
@@ -25,7 +25,7 @@ else:
   + "chance varchar(255),"
   + "donation varchar(255),"
   + "locationNorm varchar(255),"
-  + "salaryNorm varchar(255),"
+  + "salaryNorm varchar(255)"
   + ");")
 
   db.close()
