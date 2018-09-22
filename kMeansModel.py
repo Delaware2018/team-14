@@ -1,3 +1,4 @@
+import xlrd
 import pandas as pd
 import numpy as np
 from sklearn.cluster import KMeans
@@ -7,8 +8,51 @@ from sklearn.decomposition import PCA
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-def getLabels(dataSet, centroids):
 
+
+#builds a hash of the states to their average data
+loc = ('Public Data.xlsx')
+wb = xlrd.open_workbook(loc)
+sheet = wb.sheet_by_index(0)
+
+table_hash = {}
+for num in range(1,sheet.nrows):
+    point = []
+    for col in range(5):
+        point.append(sheet.cell_value(num, col))
+    editPoint = [point[0]]
+    editPoint.append(point[2])
+    editPoint.append(point[3])
+    editPoint.append(point[4])
+
+    table_hash[point[1]] = editPoint
+
+places = []
+salaries = []
+charity_rate = []
+charity_amount = []
+for key, value in table_hash.items():
+    places.append(value[0])
+    salaries.append(value[1])
+    charity_rate.append(value[2])
+    charity_amount.append(value[3])
+
+print(places)
+print(salaries)
+print(charity_rate)
+print(charity_amount)
+
+df = pd.DataFrame({
+    "location": places,
+    "salary": salaries,
+    "charity_rate": charity_rate,
+    "charity_amount": charity_amount
+})
+
+
+
+def getLabels(dataSet, centroids):
+    print("hello world")
 
 def shouldStop(oldCentroids, centroids, iterations, max_iterations):
     if iterations > max_iterations:
@@ -26,15 +70,6 @@ def getRandomCentroids(numFeatures, k):
         centroid.append(np.random.randint(1000,1400))
         centroidList.append(centroid)
     return centroidList
-
-
-df = pd.DataFrame({
-    "location": [1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6],
-    "salary": [1200,1000,1100, 2300,2400,2500, 3200,3245,3240, 4567,4512,4791, 4900,5000,5500, 6500,6000,6200],
-    "donationChance": [.01,.012,.01, .02,.02,.02, .03,.03,.03, .046,.043,.04, .055,.051,.032, .06,.062,.058],
-    "weightedDonationAmount": [1000,1200,1300, 1400,1200,1000, 1000,1200,1300, 1400,1200,1000, 1000,1200,1300, 1400,1200,1000]
-})
-
 
 k = 6
 

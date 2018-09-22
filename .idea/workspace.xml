@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68da629f-29d7-4408-8c61-7e55e3c5f8c3" name="Default" comment="" />
+    <list default="true" id="68da629f-29d7-4408-8c61-7e55e3c5f8c3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/MOCK_DATA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Public Data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/e2e/tsconfig.e2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/app/app.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/app/material.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/src/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bpos/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChromeExtension/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/ChromeExtension/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeServer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeServer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeServer/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/NodeServer/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeServer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/NodeServer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kMeansModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/kMeansModel.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,18 +52,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/team_14$kMeansModel.coverage" NAME="kMeansModel Coverage Results" MODIFIED="1537602819408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/team_14$kMeansModel.coverage" NAME="kMeansModel Coverage Results" MODIFIED="1537605946761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="kMeansModel.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kMeansModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+            <state relative-caret-position="381">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <marker date="1537602968585" expanded="true" signature="295:298" ph="..." />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,12 +96,12 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/NodeServer/package.json" />
+      <path value="$PROJECT_DIR$/bpos/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="612" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="828" />
+    <option name="width" value="720" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -141,22 +182,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="612" y="23" width="828" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2241594" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14855072" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14722222" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" visible="true" weight="0.0012077295" />
+      <window_info anchor="right" id="SciView" visible="true" weight="6.9444446E-4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39975095" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -176,11 +217,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kMeansModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        <state relative-caret-position="381">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1537602968585" expanded="true" signature="295:298" ph="..." />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
