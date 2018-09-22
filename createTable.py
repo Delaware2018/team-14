@@ -4,7 +4,7 @@ from mysql.connector import errorcode
 try:
   # attempt to connect to database
   # enter credentials  
-  db = mysql.connector.connect(user='team14', password='', 
+  db = mysql.connector.connect(user='team14', password='',
   host='35.173.239.182',
   database='bpos')
 

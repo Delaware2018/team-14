@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68da629f-29d7-4408-8c61-7e55e3c5f8c3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/kMeansClustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/kMeansClustering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/createTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/createTable.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="createTable.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="createTable.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/createTable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="90">
+              <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -29,10 +29,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kMeansClustering.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kMeansClustering.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kMeansClustering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
+            <state relative-caret-position="1408">
               <caret line="97" column="19" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -62,8 +62,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/kMeansModel.py" />
-        <option value="$PROJECT_DIR$/createTable.py" />
         <option value="$PROJECT_DIR$/kMeansClustering.py" />
+        <option value="$PROJECT_DIR$/createTable.py" />
       </list>
     </option>
   </component>
@@ -187,20 +187,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="327" y="23" width="1113" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31257784" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31257784" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14722222" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1904762" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" visible="true" weight="6.9444446E-4" />
+      <window_info anchor="right" id="SciView" visible="true" weight="8.984726E-4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39975095" />
       <window_info id="Favorites" side_tool="true" />
@@ -227,22 +227,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createTable.py">
+    <entry file="file://$PROJECT_DIR$/kMeansClustering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="1408">
+          <caret line="97" column="19" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kMeansClustering.py">
+    <entry file="file://$PROJECT_DIR$/createTable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="97" column="19" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
+        <state relative-caret-position="90">
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
