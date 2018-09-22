@@ -76,6 +76,16 @@ getDonationFreq = function() {
     }
 };
 
+getName = function() {
+    const fname = document.getElementById("fname");
+    const lname = document.getElementById("lname");
+
+    return {
+        fname: fname.value,
+        lnmae: lname.value,
+    }
+};
+
 let businessoOptions;
 const studentOption = document.getElementById("student");
 studentOption.onchange = function() {
@@ -106,9 +116,12 @@ studentOption.onchange = function() {
 
 const donateBtn = document.getElementById("submit");
 donateBtn.onclick = function() {
+    const fullname = getName();
     const donateJson = {
        donation_amount: getDonationAmount(),
        donation_freq: getDonationFreq(),
+       fname: fullname.fname,
+       lname: fullname.lname,
     };
 };
 
