@@ -1,6 +1,20 @@
 {
-    "name": "Getting Started Example",
+    "name": "B+ Advanced Analytics",
     "version": "1.0",
-    "description": "Build an Extension!",
-    "manifest_version": 2
+    "description": "Extension to add extra inputs fields to the donation process",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "https://www.beposfdn.org/donate/*"
+            ]
+        }
+    ],
+    "permissions": ["activeTab"]
 }
