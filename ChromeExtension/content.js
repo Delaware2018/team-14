@@ -94,9 +94,15 @@ getAge = function() {
     return ageLabel.value;
 };
 
+getSchool = function() {
+    return document.getElementById("school").value;
+}
+
 let businessoOptions;
+let studentStatusText;
 const studentOption = document.getElementById("student");
 studentOption.onchange = function() {
+    studentStatusText = studentOption.options[studentOption.selectedIndex].textContent;
     const studentStatus = studentOption.options[studentOption.selectedIndex].value;
     const isStudent = !(studentStatus === '1');
 
@@ -130,6 +136,8 @@ donateBtn.onclick = function() {
        donation_freq: getDonationFreq(),
        fname: fullname.fname,
        lname: fullname.lname,
+        student_status: studentStatusText,
+        school: getSchool(),
     };
 };
 
