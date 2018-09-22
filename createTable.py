@@ -4,7 +4,7 @@ from mysql.connector import errorcode
 try:
   # attempt to connect to database
   # enter credentials  
-  db = mysql.connector.connect(user='team14', password='', 
+  db = mysql.connector.connect(user='team14', password='',
   host='35.173.239.182',
   database='bpos')
 
@@ -19,24 +19,13 @@ else:
   print('connected')
   cursor =  db.cursor()
   
-  cursor.execute("CREATE TABLE users (" 
-  + "firstname varchar(255),"
-  + "lastname varchar(255),"
-  + "email varchar(255),"    
-  + "city varchar(255),"
-  + "state varchar(255),"
-  + "zipcode int,"
-  + "school varchar(255),"
-  + "year int," 
-  + "phone varchar(255),"
-  + "organization varchar(255),"
-  + "gender varchar(255),"
-  + "streetnum varchar(255),"
-  + "streetname varchar(255),"
-  + "amount int,"
-  + "recurring varchar(255),"
-  + "businessOrNot varchar(255),"
-  + "businessdescription varchar(255)"
+  cursor.execute("CREATE TABLE kMeansClusteringModel ("
+  + "location varchar(255),"
+  + "income varchar(255),"
+  + "chance varchar(255),"
+  + "donation varchar(255),"
+  + "locationNorm varchar(255),"
+  + "salaryNorm varchar(255)"
   + ");")
 
-db.close()
+  db.close()

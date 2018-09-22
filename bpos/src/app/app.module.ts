@@ -6,17 +6,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { GraphComponent } from './graph/graph.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GraphComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
