@@ -1,3 +1,5 @@
+const baseUrl = 'http://localhost:8080';
+
 function htmlToElement(html) {
     const template = document.createElement('template');
     const trimmedHtml = html.trim();
@@ -134,18 +136,33 @@ studentOption.onchange = function() {
     };
 };
 
-const donateBtn = document.getElementById("submit");
-donateBtn.onclick = function() {
+sendDonorData = function() {
     const fullname = getName();
     const donateJson = {
-       donation_amount: getDonationAmount(),
-       donation_freq: getDonationFreq(),
-       fname: fullname.fname,
-       lname: fullname.lname,
+        donation_amount: getDonationAmount(),
+        donation_freq: getDonationFreq(),
+        fname: fullname.fname,
+        lname: fullname.lname,
         student_status: studentStatusText,
         school: getSchool(),
         has_business: businessStatusText,
         business_descr: getBusinessDesc(),
     };
+
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", baseUrl + '/api/add_donor', true);
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.onreadystatechange = function () {
+        if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+            console.log("data send");
+        }
+    }
+    xhr.send(JSON.stringify(donateJson));
 };
+
+const donateBtn = document.getElementById("submit");
+donateBtn.onmouseover = function() {
+    sendDonorData();
+};
+
 
