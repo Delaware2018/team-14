@@ -34,6 +34,7 @@ else:
   + "streetnum varchar(255),"
   + "streetname varchar(255),"
   + "amount int,"
+  + "recurring varchar(255),"
   + "businessOrNot varchar(255),"
   + "businessdescription varchar(255)"
   + ");")
