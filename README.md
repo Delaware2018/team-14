@@ -1,6 +1,6 @@
 # GrowthForce
 
-This program is intended to help [B+ foundation](https://bepositive.org) identify and target users to increase donations overall using data visualizations. It uses machine learning to determine target users in select regions and current data of donors and donor networks to identify top contribuitors and those with most referrals.
+This program is intended to help [B+ foundation](https://bepositive.org) identify and target users to increase donations overall using data visualizations. It uses machine learning to determine target users in select regions and current data of donors and donor networks to identify top contributors and those with most referrals.
 
 # Project Overview
 
